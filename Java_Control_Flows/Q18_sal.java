@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question18 {
+public class Q18_sal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your salary: ");

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question25 {
+public class Q19_pos{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a positive integer less than 100: ");
@@ -12,12 +12,10 @@ public class Question25 {
         }
         
         System.out.println("Multiples of " + number + " below 100:");
-        int counter = 99;
-        while (counter >= 1) {
-            if (counter % number == 0) {
-                System.out.println(counter);
+        for (int i = 100; i >= 1; i--) {
+            if (i % number == 0) {
+                System.out.println(i);
             }
-            counter--;
         }
     }
 }

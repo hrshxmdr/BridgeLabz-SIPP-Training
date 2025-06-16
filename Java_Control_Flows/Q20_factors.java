@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question27 {
+public class Q20_factors {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a positive integer: ");
@@ -11,16 +11,13 @@ public class Question27 {
             return;
         }
         
-        for (int i = 1; i <= number; i++) {
-            if (i % 15 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Fizz");
-            } else if (i % 5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
+        System.out.println("Factors of " + number + ":");
+        int counter = 1;
+        while (counter <= number) {
+            if (number % counter == 0) {
+                System.out.println(counter);
             }
+            counter++;
         }
     }
 }

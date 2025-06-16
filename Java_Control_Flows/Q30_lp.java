@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question30 {
+public class Q30_lp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a year (>= 1582): ");

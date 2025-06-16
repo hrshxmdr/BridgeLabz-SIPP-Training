@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question17 {
+public class Q17_positive {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a natural number: ");

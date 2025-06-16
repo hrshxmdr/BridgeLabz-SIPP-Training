@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question21 {
+public class Q21_greatestfactor{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter an integer: ");

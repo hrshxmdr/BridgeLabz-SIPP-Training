@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question22 {
+public class Q27_Fizz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a positive integer: ");
@@ -11,8 +11,7 @@ public class Question22 {
             return;
         }
         
-        int i = 1;
-        while (i <= number) {
+        for (int i = 1; i <= number; i++) {
             if (i % 15 == 0) {
                 System.out.println("FizzBuzz");
             } else if (i % 3 == 0) {
@@ -22,7 +21,6 @@ public class Question22 {
             } else {
                 System.out.println(i);
             }
-            i++;
         }
     }
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question29 {
+public class Q29_power {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number: ");
