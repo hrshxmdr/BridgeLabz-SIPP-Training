@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-public class Q14_BMICalculation{
+public class Q14_BMICalculation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         // Step 1: Take input for number of persons
         System.out.print("Enter number of persons: ");
@@ -40,5 +42,7 @@ public class Q14_BMICalculation{
         for (int i = 0; i < n; i++) {
             System.out.printf("%-10.2f%-10.2f%-10.2f%-15s\n", weights[i], heights[i], bmi[i], status[i]);
         }
+
+        sc.close(); // Good practice to close the Scanner
     }
 }
