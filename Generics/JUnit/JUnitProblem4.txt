@@ -1,0 +1,3 @@
+Testing Exception Handling
+Create divide(a, b) method that throws ArithmeticException if b=0.
+JUnit test to verify exception is thrown.

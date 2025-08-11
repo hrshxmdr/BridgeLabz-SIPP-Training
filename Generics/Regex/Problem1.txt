@@ -1,0 +1,5 @@
+Validate a Username:
+Can only contain letters, numbers, underscores.
+Must start with a letter.
+Length: 5-15.
+Example: user_123 → Valid

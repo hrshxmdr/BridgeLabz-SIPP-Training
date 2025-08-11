@@ -1,0 +1,2 @@
+Extract All Capitalized Words from a Sentence:
+Example: Eiffel, Tower, Paris, Statue, Liberty, New, York

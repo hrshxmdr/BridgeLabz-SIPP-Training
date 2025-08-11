@@ -1,0 +1,2 @@
+Find Repeating Words in a Sentence:
+Example: 'This is is repeated repeated' → is, repeated

@@ -1,0 +1,4 @@
+Testing @BeforeEach and @AfterEach
+DatabaseConnection class with connect() and disconnect().
+@BeforeEach: connect, @AfterEach: disconnect.
+JUnit tests to verify.

@@ -1,0 +1,2 @@
+Replace Multiple Spaces with a Single Space:
+Example: 'This  is   spaced' → 'This is spaced'

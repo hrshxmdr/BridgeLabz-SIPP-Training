@@ -1,0 +1,4 @@
+Basic JUnit Test: Testing a Calculator Class
+Create a Calculator class with add, subtract, multiply, divide methods.
+Test each method.
+Bonus: Test division by zero and handle exceptions.

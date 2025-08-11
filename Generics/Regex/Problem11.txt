@@ -1,0 +1,2 @@
+Validate a Credit Card Number:
+Visa starts with 4, MasterCard with 5, length 16 digits.

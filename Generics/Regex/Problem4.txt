@@ -1,0 +1,2 @@
+Extract All Email Addresses from a Text:
+Example: support@example.com

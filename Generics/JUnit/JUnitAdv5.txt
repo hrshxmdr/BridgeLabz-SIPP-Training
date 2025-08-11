@@ -1,0 +1,4 @@
+Testing User Registration
+UserRegistration: registerUser(username, email, password).
+Throws IllegalArgumentException for invalid inputs.
+JUnit tests for valid & invalid registrations.

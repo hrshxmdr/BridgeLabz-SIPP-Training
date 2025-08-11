@@ -1,0 +1,3 @@
+Validate a Hex Color Code:
+Starts with # + 6 hex digits.
+Example: #FFA500 → Valid

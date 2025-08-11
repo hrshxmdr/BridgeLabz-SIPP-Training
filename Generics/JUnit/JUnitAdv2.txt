@@ -1,0 +1,3 @@
+Testing Password Strength Validator
+PasswordValidator: at least 8 chars, one uppercase, one digit.
+JUnit tests for valid & invalid passwords.

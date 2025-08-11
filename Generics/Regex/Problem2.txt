@@ -1,0 +1,3 @@
+Validate a License Plate Number:
+Format: Two uppercase letters + four digits.
+Example: AB1234 → Valid

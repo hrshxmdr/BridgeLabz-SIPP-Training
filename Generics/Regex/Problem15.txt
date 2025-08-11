@@ -1,0 +1,2 @@
+Validate a Social Security Number (SSN):
+Format: 123-45-6789
