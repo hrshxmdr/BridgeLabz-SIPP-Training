@@ -1,0 +1,18 @@
+Class Transaction<T>
+    Attribute: paymentData of type T
+
+    Constructor(TransactionData)
+        this.paymentData = TransactionData
+
+    Function processPayment()
+        Print "Processing: " + paymentData
+End Class
+
+// Example
+upiTxn = new Transaction<UPI>("UPI: user@upi")
+cardTxn = new Transaction<Card>("Card: 1234-5678")
+netBankingTxn = new Transaction<NetBanking>("NetBanking: HDFC")
+
+upiTxn.processPayment()
+cardTxn.processPayment()
+netBankingTxn.processPayment()

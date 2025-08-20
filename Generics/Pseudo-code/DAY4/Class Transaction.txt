@@ -1,0 +1,11 @@
+Class Transaction
+    Attributes: id, merchant, amount, date
+
+Procedure generateReport(transactions)
+    report = transactions.stream()
+        .collect(groupBy( merchant, month(date), sum(amount) ))
+
+    For each merchant, month in report
+        Print "Merchant: " + merchant + 
+              " Month: " + month + 
+              " Total: " + sum

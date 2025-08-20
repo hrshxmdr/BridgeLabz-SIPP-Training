@@ -1,0 +1,17 @@
+class Doctor {
+    String name
+    String specialization
+}
+
+Map<String, List<Doctor>> departmentMap = new HashMap<>()
+
+method addDoctor(department, doctor):
+    if department not in departmentMap:
+        departmentMap[department] = new ArrayList<Doctor>()
+    departmentMap[department].add(doctor)
+
+method filterBySpecialization(specialization):
+    for each department in departmentMap:
+        doctors = departmentMap[department]
+        filtered = filter doctors where doctor.specialization == specialization
+        print("Department: " + department + " -> " + filtered)

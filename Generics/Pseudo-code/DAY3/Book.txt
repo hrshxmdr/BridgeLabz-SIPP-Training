@@ -1,0 +1,11 @@
+Class Book
+    Attributes: title, year, rating
+
+Procedure filterBooks(bookList)
+    result = bookList.stream()
+        .filter(book -> book.year > 2015)
+        .filter(book -> book.rating > 4.5)
+        .collect(toList)
+
+    Print result
+End Procedure

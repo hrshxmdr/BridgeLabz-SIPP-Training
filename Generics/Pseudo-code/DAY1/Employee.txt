@@ -1,0 +1,24 @@
+BEGIN
+    DEFINE class Employee
+        ATTRIBUTES: name (String), department (String), salary (double)
+        CONSTRUCTOR: to initialize attributes
+
+    CREATE ArrayList<Employee> employees
+
+    // Add employee objects
+    employees.add( new Employee("John", "IT", 50000) )
+    employees.add( new Employee("Sarah", "HR", 45000) )
+    employees.add( new Employee("Mike", "IT", 55000) )
+    employees.add( new Employee("Emma", "Finance", 60000) )
+
+    // Filter employees by department "IT"
+    itEmployees = employees
+                  .stream()
+                  .filter( employee.department equals "IT" )
+                  .collect( toList )
+
+    PRINT "Employees in IT Department:"
+    FOR each emp in itEmployees
+        PRINT emp.name + " - " + emp.salary
+END
+
