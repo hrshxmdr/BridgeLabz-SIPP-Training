@@ -1,0 +1,21 @@
+Initialize HashMap patientRecords<patientID, Patient>
+
+Function addPatient(patientID, Patient)
+    patientRecords.put(patientID, Patient)
+
+Function getPatient(patientID)
+    return patientRecords.get(patientID)
+
+Function updatePatient(patientID, newData)
+    patientRecords.put(patientID, newData)
+
+Function deletePatient(patientID)
+    patientRecords.remove(patientID)
+
+// Example
+addPatient(101, "Alice - Fever")
+addPatient(102, "Bob - Cold")
+
+Print getPatient(101)      // Alice
+updatePatient(101, "Alice - Recovered")
+deletePatient(102)

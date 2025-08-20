@@ -1,0 +1,24 @@
+Procedure TextEditor
+    Initialize Stack undoStack
+
+    Function typeText(text)
+        Push text onto undoStack
+        Print "Typed: " + text
+    End Function
+
+    Function undo()
+        If undoStack is not empty Then
+            lastAction ← Pop from undoStack
+            Print "Undo action: Removed '" + lastAction + "'"
+        Else
+            Print "Nothing to undo"
+        End If
+    End Function
+
+    // Example simulation
+    typeText("Hello")
+    typeText(" World")
+    undo()   // removes " World"
+    undo()   // removes "Hello"
+    undo()   // Nothing to undo
+End Procedure

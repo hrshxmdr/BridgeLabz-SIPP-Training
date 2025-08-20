@@ -1,0 +1,23 @@
+Class Flight
+    Attributes: flightId, price, duration
+
+Comparator flightComparator
+    If price1 != price2 return price1 - price2
+    Else return duration1 - duration2
+
+Function mergeSort(flights, comparator)
+    If size <= 1 return flights
+    Split flights into left and right
+    left = mergeSort(left, comparator)
+    right = mergeSort(right, comparator)
+    return merge(left, right, comparator)
+
+Function merge(left, right, comparator)
+    result = []
+    While left and right not empty
+        If comparator(left[0], right[0]) <= 0
+            result.add(left.removeFirst())
+        Else
+            result.add(right.removeFirst())
+    Append remaining elements
+    return result

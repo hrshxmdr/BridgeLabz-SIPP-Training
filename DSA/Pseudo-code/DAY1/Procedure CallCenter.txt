@@ -1,0 +1,34 @@
+Procedure CallCenter
+    Initialize Queue normalQueue
+    Initialize Queue emergencyQueue
+
+    Function addCustomer(name, priority)
+        If priority = "emergency" Then
+            Enqueue name into emergencyQueue
+        Else
+            Enqueue name into normalQueue
+        End If
+        Print name + " added to " + priority + " queue"
+    End Function
+
+    Function serveCustomer()
+        If emergencyQueue is not empty Then
+            customer ← Dequeue from emergencyQueue
+            Print "Serving Emergency Customer: " + customer
+        Else If normalQueue is not empty Then
+            customer ← Dequeue from normalQueue
+            Print "Serving Normal Customer: " + customer
+        Else
+            Print "No customers waiting"
+        End If
+    End Function
+
+    // Example simulation
+    addCustomer("Alice", "normal")
+    addCustomer("Bob", "emergency")
+    addCustomer("Charlie", "normal")
+
+    serveCustomer()  // Bob (emergency)
+    serveCustomer()  // Alice (normal)
+    serveCustomer()  // Charlie (normal)
+End Procedure

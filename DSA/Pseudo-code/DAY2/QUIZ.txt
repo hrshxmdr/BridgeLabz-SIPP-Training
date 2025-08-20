@@ -1,0 +1,21 @@
+// Circular Array for time slots
+class QuizTimer {
+    int[] timeSlots
+    int currentIndex
+
+    constructor(timeSlots):
+        this.timeSlots = timeSlots
+        currentIndex = 0
+
+    method start():
+        loop over each question:
+            timeForQuestion = timeSlots[currentIndex]
+            print("Time for Question: " + timeForQuestion + " seconds")
+            if timeForQuestion <= 5:
+                print("Warning: Time almost up!")
+            currentIndex = (currentIndex + 1) % length(timeSlots)
+}
+
+// Main
+timer = new QuizTimer([10, 15, 20])
+timer.start()

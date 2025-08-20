@@ -1,0 +1,14 @@
+Graph represented as AdjacencyList<Zone, List<ConnectedZones>>
+Each Zone has riskScore based on past crime data
+
+Function dfs(zone, visited, threshold)
+    Mark zone as visited
+    If zone.riskScore > threshold
+        Print "High Risk Zone: " + zone
+
+    For each neighbor in adjacencyList[zone]
+        If neighbor not visited
+            dfs(neighbor, visited, threshold)
+
+// Example
+dfs(startZone, visitedSet, threshold=70)

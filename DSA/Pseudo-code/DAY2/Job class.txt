@@ -1,0 +1,18 @@
+// Job class
+class Job {
+    String name
+    int deadline
+    int processingTime
+}
+
+// Priority Queue based on earliest deadline
+priorityQueue<Job> jobQueue (compare by deadline, then processingTime)
+
+method addJob(name, deadline, processingTime):
+    create Job object
+    insert into jobQueue
+
+method processJobs():
+    while jobQueue not empty:
+        job = remove from jobQueue
+        print("Processing job: " + job.name + " with deadline " + job.deadline)
