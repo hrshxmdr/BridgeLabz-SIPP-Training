@@ -1,0 +1,31 @@
+Class Customer
+    Attributes: name, address, phone
+
+Class Restaurant
+    Attributes: name, location, menu
+
+Class DeliveryBoy
+    Attributes: name, id, phone
+
+Class Order
+    Attributes: orderId, foodItems
+    Composition:
+        Customer customer
+        Restaurant restaurant
+        DeliveryBoy deliveryBoy
+
+    Function showOrderDetails()
+        Print "Order ID: " + orderId
+        Print "Customer: " + customer.name
+        Print "Restaurant: " + restaurant.name
+        Print "Delivery Boy: " + deliveryBoy.name
+        Print "Items: " + foodItems
+End Class
+
+// Example
+customer = new Customer("Alice", "Delhi", "99999")
+restaurant = new Restaurant("Pizza Hut", "Delhi", "Pizza Menu")
+deliveryBoy = new DeliveryBoy("Ramesh", "D01", "88888")
+
+order = new Order("O101", ["Pizza", "Coke"], customer, restaurant, deliveryBoy)
+order.showOrderDetails()

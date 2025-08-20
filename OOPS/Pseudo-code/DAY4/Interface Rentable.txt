@@ -1,0 +1,26 @@
+Interface Rentable
+    Function rent()
+    Function returnVehicle()
+
+Abstract Class Vehicle implements Rentable
+    Attributes: vehicleId, brand, rentPrice
+
+Class Car extends Vehicle
+    Function rent() Print "Car rented"
+    Function returnVehicle() Print "Car returned"
+
+Class Bike extends Vehicle
+    Function rent() Print "Bike rented"
+    Function returnVehicle() Print "Bike returned"
+
+// Factory Pattern
+Class VehicleFactory
+    Function createVehicle(type)
+        If type == "car" return new Car()
+        Else If type == "bike" return new Bike()
+        Else return null
+
+// Example
+factory = new VehicleFactory()
+v1 = factory.createVehicle("car")
+v1.rent()

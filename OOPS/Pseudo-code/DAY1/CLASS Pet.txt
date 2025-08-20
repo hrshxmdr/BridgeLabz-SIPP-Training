@@ -1,0 +1,60 @@
+CLASS Pet
+    ATTRIBUTE name
+    ATTRIBUTE age
+    ATTRIBUTE breed
+
+    CONSTRUCTOR Pet(name, age, breed)
+        SET this.name = name
+        SET this.age = age
+        SET this.breed = breed
+                                                                                        
+    METHOD displayDetails()
+        PRINT "Name: " + name
+        PRINT "Age: " + age
+        PRINT "Breed: " + breed
+
+
+CLASS Dog EXTENDS Pet
+    ATTRIBUTE isTrained
+
+    CONSTRUCTOR Dog(name, age, breed, isTrained)
+        CALL super(name, age, breed)
+        SET this.isTrained = isTrained
+
+    METHOD displayDetails()
+        CALL super.displayDetails()
+        PRINT "Trained: " + isTrained
+
+
+CLASS Cat EXTENDS Pet
+    ATTRIBUTE color
+
+    CONSTRUCTOR Cat(name, age, breed, color)
+        CALL super(name, age, breed)
+        SET this.color = color
+
+    METHOD displayDetails()
+        CALL super.displayDetails()
+        PRINT "Color: " + color
+
+
+CLASS Bird EXTENDS Pet
+    ATTRIBUTE canTalk
+
+    CONSTRUCTOR Bird(name, age, breed, canTalk)
+        CALL super(name, age, breed)
+        SET this.canTalk = canTalk
+
+    METHOD displayDetails()
+        CALL super.displayDetails()
+        PRINT "Can Talk: " + canTalk
+
+
+// MAIN Program
+CREATE dog1 = NEW Dog("Max", 3, "Labrador", true)
+CREATE cat1 = NEW Cat("Luna", 2, "Persian", "White")
+CREATE bird1 = NEW Bird("Rio", 1, "Parrot", true)
+
+CALL dog1.displayDetails()
+CALL cat1.displayDetails()
+CALL bird1.displayDetails()

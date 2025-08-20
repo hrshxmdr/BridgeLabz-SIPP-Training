@@ -1,0 +1,28 @@
+Interface Searchable
+    Function search(keyword)
+
+Interface Printable
+    Function printReport()
+
+Class BloodReport implements Searchable, Printable
+    Function search(keyword)
+        Print "Searching blood report for: " + keyword
+    Function printReport()
+        Print "Printing Blood Report..."
+
+Class XRayReport implements Searchable, Printable
+    Function search(keyword)
+        Print "Searching X-Ray report for: " + keyword
+    Function printReport()
+        Print "Printing X-Ray Report..."
+
+Procedure Main
+    report1 = new BloodReport()
+    report2 = new XRayReport()
+
+    report1.search("Hemoglobin")
+    report1.printReport()
+
+    report2.search("Chest")
+    report2.printReport()
+End Procedure

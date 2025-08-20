@@ -1,0 +1,32 @@
+// Enum for traffic lights
+enum TrafficLight {
+    RED, YELLOW, GREEN
+}
+
+// TrafficController class
+class TrafficController {
+    TrafficLight currentLight
+    int intervalInSeconds
+
+    constructor(intervalInSeconds):
+        this.intervalInSeconds = intervalInSeconds
+        currentLight = RED
+
+    method switchLight():
+        if currentLight == RED:
+            currentLight = GREEN
+        else if currentLight == GREEN:
+            currentLight = YELLOW
+        else if currentLight == YELLOW:
+            currentLight = RED
+
+    method run():
+        loop forever:
+            print("Current Light: " + currentLight)
+            wait(intervalInSeconds)
+            switchLight()
+}
+
+// Main
+controller = new TrafficController(5)
+controller.run()

@@ -1,0 +1,32 @@
+// Abstract class
+abstract class Crop {
+    abstract method waterRequirement()
+    abstract method harvest()
+}
+
+// Rice implementation
+class Rice extends Crop {
+    method waterRequirement():
+        return "Requires 1200 liters per acre"
+
+    method harvest():
+        return "Harvest after 120 days"
+}
+
+// Wheat implementation
+class Wheat extends Crop {
+    method waterRequirement():
+        return "Requires 600 liters per acre"
+
+    method harvest():
+        return "Harvest after 90 days"
+}
+
+// Main
+crop1 = new Rice()
+print(crop1.waterRequirement())
+print(crop1.harvest())
+
+crop2 = new Wheat()
+print(crop2.waterRequirement())
+print(crop2.harvest())

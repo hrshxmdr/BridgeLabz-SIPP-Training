@@ -1,0 +1,34 @@
+CLASS Member
+    ATTRIBUTE name
+    ATTRIBUTE ID
+    ATTRIBUTE membershipDate
+    ATTRIBUTE expiryDate
+
+    CONSTRUCTOR Member(name, ID, membershipDate, expiryDate)
+        SET this.name = name
+        SET this.ID = ID
+        SET this.membershipDate = membershipDate
+        SET this.expiryDate = expiryDate
+
+    METHOD isMembershipValid(currentDate)
+        IF currentDate <= expiryDate THEN
+            RETURN true
+        ELSE
+            RETURN false
+
+    METHOD displayMemberInfo()
+        PRINT "Name: " + name
+        PRINT "ID: " + ID
+        PRINT "Membership Date: " + membershipDate
+        PRINT "Expiry Date: " + expiryDate
+
+
+// MAIN Program
+CREATE member1 = NEW Member("John Doe", "M101", "2024-01-01", "2025-01-01")
+CALL member1.displayMemberInfo()
+
+SET today = "2024-12-15"
+IF member1.isMembershipValid(today) == true THEN
+    PRINT "Membership is valid."
+ELSE
+    PRINT "Membership has expired."
